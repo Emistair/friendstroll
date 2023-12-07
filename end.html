@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+       
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            color: #fff;
+            background-color: #333;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .reply{
+            text-align: center;
+            margin-top:220px;
+            font-weight: bold;
+            font-size: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Disclaimer</h1>
+    </header>
+
+
+    </div>
+    <p class="reply">AB KYA LAURA DEKHE GA BHAI?</p>
+
+    <footer>
+        &copy; 2023 Life is Enjoy
+    </footer>
+    
+    <script>
+        // Function to generate a random color
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Set dynamic background color for the body
+        document.body.style.backgroundColor = getRandomColor();
+        
+        // Optionally, you can update the background color at regular intervals
+        setInterval(function() {
+            document.body.style.backgroundColor = getRandomColor();
+        }, 500); // Change color every 1 seconds
+    </script>
+
+</body>
+</html>
